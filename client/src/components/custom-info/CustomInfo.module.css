@@ -1,0 +1,179 @@
+/* CustomInfo.module.css */
+/* CustomInfo.module.css */
+.background {
+    background-color: rgb(230 230 230); /* Grey background behind the container */
+    padding: 40px; /* Adjust padding to show grey around the container */
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px; /* Adjust padding if necessary */
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white; /* Keep container background as red for contrast */
+    border-radius: 8px; /* Optional: Add border radius for a softer look */
+}
+
+
+.titleSection {
+    background-color: #f0f8ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+.description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.step {
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific placement for each step */
+.step:nth-child(1) {
+    grid-column: 1 / 2;
+}
+.step:nth-child(2) {
+    grid-column: 2 / 3;
+}
+.step:nth-child(3) {
+    grid-column: 3 / 4;
+}
+.step:nth-child(4) {
+    grid-column: 1 / 2;
+}
+.step:nth-child(5) {
+    grid-column: 2 / 3;
+}
+
+.stepNumber {
+    font-size: 2em;
+    color: #87cefa;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.stepTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stepDescription {
+    font-size: 1em;
+}
+
+.conclusion {
+    margin-top: 20px;
+    font-size: 1.1em;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Responsive design */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .steps {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+}
+
+/* For smaller tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .steps {
+        grid-template-columns: 1fr; /* Stack steps into a single column */
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .stepNumber {
+        font-size: 1.8em;
+    }
+
+    .stepTitle {
+        font-size: 1.1em;
+    }
+
+    .stepDescription {
+        font-size: 0.95em;
+    }
+
+    .conclusion {
+        font-size: 1em;
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.6em;
+    }
+
+    .subtitle {
+        font-size: 1.4em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+
+    .stepNumber {
+        font-size: 1.6em;
+    }
+
+    .stepTitle {
+        font-size: 1em;
+    }
+
+    .stepDescription {
+        font-size: 0.9em;
+    }
+
+    .conclusion {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}

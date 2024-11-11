@@ -1,0 +1,79 @@
+/* Set the width of the container to be wider */
+.container {
+  max-width: 100%;  /* Allow full width of the viewport */
+  padding-left: 15px;  /* Optional, adjust to fit your needs */
+  padding-right: 15px; /* Optional, adjust to fit your needs */
+}
+
+/* Increase the column width */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-6 {
+  flex: 0 0 70%; /* Set the width of the accordion to 70% of the parent container */
+  max-width: 100%;  /* Allow it to grow as needed */
+}
+
+.panel-group {
+  margin-top: 20px;
+}
+
+/* Panel styles */
+.panel {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.panel-heading {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.panel-title a {
+  display: block;
+  padding: 20px 80px;  /* Increased padding for more clickable area */
+  margin: 0;
+  background: #fff;
+  font-size: 24px;  /* Increased font size */
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #d11149;
+  border-radius: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  position: relative;
+}
+
+.panel-title a .icon {
+  display: inline-block;
+  width: 55px;
+  height: 100%;
+  border-right: 2px solid #d11149;
+  font-size: 24px;  /* Increased font size for larger icons */
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.panel-body {
+  padding: 15px 30px;  /* Increased padding */
+  margin: 0 0 20px;
+  border-bottom: 3px solid #d11149;
+  border-top: none;
+  background: #fff;
+  font-size: 18px;  /* Increased font size */
+  color: #333;
+  line-height: 30px;  /* Increased line height for better readability */
+}
