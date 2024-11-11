@@ -51,7 +51,6 @@ export default function Home() {
 
             {/* Other components */}
             <About />
-            <AccordionComponent />
 
             <ExploreTour />
             <StatisticsSection />
