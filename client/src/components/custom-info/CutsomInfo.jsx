@@ -13,7 +13,7 @@ const CustomInfo = () => {
         <div className={styles.background}> {/* New wrapper for background */}
             <div className={styles.container}>
                 <h2 className={styles.title} data-aos="fade-down">
-                    Доверете се на МН ЛОДЖИСТИК за вашето<br/>митническо представителство!
+                    Доверете се на МН ЛОДЖИСТИК за вашето<br />митническо представителство!
                 </h2>
 
                 <p className={styles.description} data-aos="fade-up" data-aos-delay="100">
@@ -30,7 +30,7 @@ const CustomInfo = () => {
                             </p>
                         </div>
                     </div>
-                    
+
                     <div className={styles.step} data-aos="fade-up" data-aos-delay="300">
                         <div className={styles.stepNumber}>2</div>
                         <div>
@@ -40,7 +40,7 @@ const CustomInfo = () => {
                             </p>
                         </div>
                     </div>
-                    
+
                     <div className={styles.step} data-aos="fade-up" data-aos-delay="400">
                         <div className={styles.stepNumber}>3</div>
                         <div>
@@ -50,7 +50,7 @@ const CustomInfo = () => {
                             </p>
                         </div>
                     </div>
-                    
+
                     <div className={styles.step} data-aos="fade-up" data-aos-delay="500">
                         <div className={styles.stepNumber}>4</div>
                         <div>
@@ -60,7 +60,7 @@ const CustomInfo = () => {
                             </p>
                         </div>
                     </div>
-                    
+
                     <div className={styles.step} data-aos="fade-up" data-aos-delay="600">
                         <div className={styles.stepNumber}>5</div>
                         <div>
@@ -70,6 +70,17 @@ const CustomInfo = () => {
                             </p>
                         </div>
                     </div>
+
+                    <div className={styles.step} data-aos="fade-up" data-aos-delay="500">
+                        <div className={styles.stepNumber}>6</div>
+                        <div>
+                            <h3 className={styles.stepTitle}>Вашето търпение</h3>
+                            <p className={styles.stepDescription}>
+                                за да ви осигурим най-доброто обслужване!
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
                 <p className={styles.conclusion} data-aos="fade-up" data-aos-delay="700">

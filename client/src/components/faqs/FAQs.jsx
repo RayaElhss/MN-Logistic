@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import Accordion from 'react-bootstrap/Accordion';
-import faqData from '../faqs/faqData.json'; // Adjust the path as needed
 import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from 'aos'; // Import AOS
+import KathyAccordion from './testt/KathyAccordion';
 
 function FAQ() {
   useEffect(() => {
@@ -29,11 +28,11 @@ function FAQ() {
 
       <div className="container" data-aos="fade-bottom">
         <h5 style={{
-          marginBottom: '70px',
           fontFamily: '"Roboto", sans-serif',
           fontSize: '24px',
           color: 'black',
-          fontWeight: 'lighter'
+          fontWeight: 'lighter',
+          lineHeight: '1.6'
         }}>
           В днешния динамичен свят на глобалната търговия, бизнесът често се изправя пред предизвикателствата на сложни митнически процедури.
           Вносът и износът на стоки от и до страни извън Европейския съюз изисква специфични познания, време и ресурси. Затова много компании
@@ -42,7 +41,9 @@ function FAQ() {
         </h5>
       </div>
 
-      <div
+      <KathyAccordion />
+
+      {/* <div
         className="container"
         style={{
           marginTop: '20px',
@@ -56,10 +57,10 @@ function FAQ() {
         <Accordion defaultActiveKey="0" flush>
           {faqData.map((item) => (
             <Accordion.Item eventKey={item.id.toString()} key={item.id} data-aos="fade-up">
-              <Accordion.Header className="faq-question">
+              <Accordion.Header className="faq-question" style={{ fontSize: '18px' }}>
                 {item.question}
               </Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Body style={{ fontSize: '16px' }}>
                 {item.answers.map((answer, index) => (
                   <div key={index}>
                     {answer}
@@ -70,7 +71,7 @@ function FAQ() {
             </Accordion.Item>
           ))}
         </Accordion>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -8,7 +8,7 @@ import StatisticsSection from "../statisticsSection/Statistics";
 import ContactSection from '../sections/contactSection';
 import CustomInfo from '../custom-info/CutsomInfo.jsx';
 import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink from react-scroll
-import AccordionComponent from '../question-accordion/QuestionAccordion.jsx';
+import Statistic from '../testStatistics/TestStatitics.jsx';
 
 export default function Home() {
     useEffect(() => {
@@ -51,7 +51,7 @@ export default function Home() {
 
             {/* Other components */}
             <About />
-
+            <Statistic />
             <ExploreTour />
             <StatisticsSection />
             <FAQ />
