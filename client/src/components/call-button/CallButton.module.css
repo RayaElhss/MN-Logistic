@@ -1,0 +1,23 @@
+.callButton {
+  position: fixed;  /* Keeps the button fixed on the screen */
+  bottom: 20px;     /* Position from the bottom of the screen */
+  right: 10px;      /* Pull it even more to the right */
+  background-color: #ff6347; /* Button color */
+  color: white;     /* Text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;  /* Make the button circular */
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.callButton:hover {
+  background-color: #ff4500;  /* Change color on hover */
+}
+
+.callButton:focus {
+  outline: none;
+}

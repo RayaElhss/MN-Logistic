@@ -40,7 +40,7 @@ export default function UslugiCards() {
                                 src={tour.logoUrl}
                                 alt="Logo"
                                 className="card-logo me-3"
-                                style={{ width: "40px", height: "40px" }}
+                                style={{ width: "50px", height: "40px" }}
                             />
                             <div className="text-container">
                                 <h5 className="card-title mb-0">{tour.name}</h5>

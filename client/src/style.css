@@ -1,8 +1,7 @@
 /*** Spinner Start ***/
 /*** Spinner ***/
 
-
-
+/* Import Tailwind's base styles */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
@@ -251,14 +250,14 @@
 
 .logo-text-container img {
     margin-right: 10px;
-    height: 50px;
+    /* height: 50px; */
 }
 
 
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-right: 25px;
-    padding: 35px 0;
+    padding: 37px 0;
     color: var(--bs-white);
     font-size: 17px;
     font-weight: 400;
@@ -276,10 +275,15 @@
     color: white;
 }
 
-.navbar-light .navbar-brand img {
-    max-height: 60px;
+.navbar-light {
+    max-height: 100px;
     transition: .5s;
 }
+
+.navbar-brand img {
+    height: 400px;
+}
+
 
 .sticky-top.navbar-light .navbar-brand img {
     max-height: 45px;
@@ -297,6 +301,8 @@
     /* Underline indicator set to yellow */
     transition: .5s;
 }
+
+
 
 
 
@@ -468,7 +474,11 @@
     }
 
     .navbar-light .navbar-brand img {
-        max-height: 45px;
+        max-height: 100px;
+    }
+
+    .navbar-brand img {
+        height: 800px;
     }
 
     /* Make the expanded menu full-width and cover the screen */
@@ -479,7 +489,7 @@
         left: 0;
         width: 100vw;
         /* Full viewport width */
-        background-color: rgb(103, 34, 34) !important;
+        background-color: rgb(171, 182, 192) !important;
         /* Set the background color to yellow */
         padding: 0 !important;
         margin: 0 !important;
@@ -489,7 +499,7 @@
 
     /* Ensure dropdown items are aligned correctly */
     .dropdown-menu {
-        background-color: rgb(214, 214, 214) !important;
+        background-color: rgb(66, 158, 228) !important;
         border: none;
         width: 100%;
     }
@@ -649,6 +659,36 @@
         /* Show the menu when hamburger is clicked */
     }
 }
+
+
+/* Ensure larger logo on smaller screens */
+@media (max-width: 576px) { /* Adjust breakpoint if necessary */
+    .logo-text-container img {
+        height: 80px; /* Increase the height */
+        width: auto;  /* Maintain aspect ratio */
+    }
+
+    /* Adjust navbar brand to prevent conflicts */
+    .navbar-brand img {
+        height: 80px;
+        width: auto;
+    }
+}
+
+/* For slightly larger devices like tablets */
+@media (max-width: 991.98px) {
+    .logo-text-container img {
+        height: 60px; /* Larger than default but smaller than phone */
+        width: auto;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+        width: auto;
+    }
+}
+
+
 
 
 

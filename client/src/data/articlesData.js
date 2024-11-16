@@ -1,4 +1,4 @@
-const articles = [
+const questions = [
     {
         id: 1,
         title: "Как се подготвя митническа документация",
@@ -43,4 +43,4 @@ const articles = [
     },
 ];
 
-export default articles;
+export default questions;

@@ -11,177 +11,84 @@ export default function Footer() {
                         <div className="col-md-6 col-lg-6 col-xl-3">
                             <div className={`${styles.footerItem} d-flex flex-column`}>
                                 <h4 className="mb-4 text-white">
-                                    Get In Touch
+                                    Свържете се с нас:
                                 </h4>
                                 <a href="">
                                     <i className="fas fa-home me-2" />
-                                    {' '}123 Street, New York, USA
+                                    {' '}Света Троица, бл. 168
                                 </a>
                                 <a href="">
                                     <i className="fas fa-envelope me-2" />
-                                    {' '}info@example.com
+                                    {' '}hamudibg@neshtosi.com
                                 </a>
                                 <a href="">
                                     <i className="fas fa-phone me-2" />
-                                    {' '}+012 345 67890
+                                    {' '}+359 893026546
                                 </a>
-                                <a
-                                    className="mb-3"
-                                    href=""
-                                >
-                                    <i className="fas fa-print me-2" />
-                                    {' '}+012 345 67890
-                                </a>
-                                <div className="d-flex align-items-center">
-                                    <i className="fas fa-share fa-2x text-white me-2" />
-                                    <a
-                                        className="btn-square btn btn-primary rounded-circle mx-1"
-                                        href=""
-                                    >
-                                        <i className="fab fa-facebook-f" />
-                                    </a>
-                                    <a
-                                        className="btn-square btn btn-primary rounded-circle mx-1"
-                                        href=""
-                                    >
-                                        <i className="fab fa-twitter" />
-                                    </a>
-                                    <a
-                                        className="btn-square btn btn-primary rounded-circle mx-1"
-                                        href=""
-                                    >
-                                        <i className="fab fa-instagram" />
-                                    </a>
-                                    <a
-                                        className="btn-square btn btn-primary rounded-circle mx-1"
-                                        href=""
-                                    >
-                                        <i className="fab fa-linkedin-in" />
-                                    </a>
-                                </div>
+                                
+                                
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-6 col-xl-3">
                             <div className={`${styles.footerItem} d-flex flex-column`}>
                                 <h4 className="mb-4 text-white">
-                                    Company
+                                    MN Logistic
                                 </h4>
-                                <a href="">
+                                <a href="/transport">
                                     <i className="fas fa-angle-right me-2" />
-                                    {' '}About
+                                    {' '}Транспорт
                                 </a>
                                 <a href="">
                                     <i className="fas fa-angle-right me-2" />
-                                    {' '}Careers
+                                    {' '}За нас
                                 </a>
                                 <a href="">
                                     <i className="fas fa-angle-right me-2" />
-                                    {' '}Blog
+                                    {' '}Блог
                                 </a>
                                 <a href="">
                                     <i className="fas fa-angle-right me-2" />
-                                    {' '}Press
+                                    {' '}Контакти
                                 </a>
                                 <a href="">
                                     <i className="fas fa-angle-right me-2" />
-                                    {' '}Gift Cards
-                                </a>
-                                <a href="">
-                                    <i className="fas fa-angle-right me-2" />
-                                    {' '}Magazine
+                                    {' '}Въпроси
                                 </a>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-6 col-xl-3">
                             <div className={`${styles.footerItem} d-flex flex-column`}>
                                 <h4 className="mb-4 text-white">
-                                    Support
+                                    Услуги
                                 </h4>
                                 <a href="">
                                     <i className="fas fa-angle-right me-2" />
-                                    {' '}Contact
+                                    {' '}Вносно обмитяване на стоки
                                 </a>
                                 <a href="">
                                     <i className="fas fa-angle-right me-2" />
-                                    {' '}Legal Notice
+                                    {' '}Износно обмитяване на стоки
                                 </a>
                                 <a href="">
                                     <i className="fas fa-angle-right me-2" />
-                                    {' '}Privacy Policy
+                                    {' '}Изготвяне на тразитен документ T1
                                 </a>
                                 <a href="">
                                     <i className="fas fa-angle-right me-2" />
-                                    {' '}Terms and Conditions
+                                    {' '}политика за поверителност
                                 </a>
-                                <a href="">
-                                    <i className="fas fa-angle-right me-2" />
-                                    {' '}Sitemap
-                                </a>
-                                <a href="">
-                                    <i className="fas fa-angle-right me-2" />
-                                    {' '}Cookie policy
-                                </a>
+                                
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-6 col-xl-3">
                             <div className={`${styles.footerItem}`}>
                                 <div className="row gy-3 gx-2 mb-4">
-                                    <div className="col-xl-6">
-                                        <form>
-                                            <div className="form-floating">
-                                                <select
-                                                    className="form-select bg-dark border"
-                                                    id="select1"
-                                                >
-                                                    <option value="1">
-                                                        Arabic
-                                                    </option>
-                                                    <option value="2">
-                                                        German
-                                                    </option>
-                                                    <option value="3">
-                                                        Greek
-                                                    </option>
-                                                    <option value="3">
-                                                        New York
-                                                    </option>
-                                                </select>
-                                                <label htmlFor="select1">
-                                                    English
-                                                </label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div className="col-xl-6">
-                                        <form>
-                                            <div className="form-floating">
-                                                <select
-                                                    className="form-select bg-dark border"
-                                                    id="select1"
-                                                >
-                                                    <option value="1">
-                                                        USD
-                                                    </option>
-                                                    <option value="2">
-                                                        EUR
-                                                    </option>
-                                                    <option value="3">
-                                                        INR
-                                                    </option>
-                                                    <option value="3">
-                                                        GBP
-                                                    </option>
-                                                </select>
-                                                <label htmlFor="select1">
-                                                    $
-                                                </label>
-                                            </div>
-                                        </form>
-                                    </div>
+                                    
                                 </div>
                                 <h4 className="text-white mb-3">
-                                    Payments
+                                    Работно време:
                                 </h4>
+                                <h3>4:00</h3>
                                 <div className="footer-bank-card">
                                     <a
                                         className="text-white me-2"

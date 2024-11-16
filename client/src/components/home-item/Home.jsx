@@ -9,6 +9,7 @@ import ContactSection from '../sections/contactSection';
 import CustomInfo from '../custom-info/CutsomInfo.jsx';
 import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink from react-scroll
 import Statistic from '../testStatistics/TestStatitics.jsx';
+import ContactForm from '../contact-form/ContactForm.jsx';
 
 export default function Home() {
     useEffect(() => {
@@ -25,7 +26,7 @@ export default function Home() {
                 className="hero-header"
                 data-aos="fade-in"
                 style={{
-                    backgroundImage: "url('https://img.freepik.com/premium-vector/red-planet-with-black-background_1065176-5895.jpg?semt=ais_hybrid')",
+                    backgroundImage: "url('https://i.pinimg.com/originals/2a/a7/8a/2aa78a2c8fbe91b37bfed0fbb32fae82.jpg')",
                 }}
             >
                 <div className="text-white p-3">
@@ -51,12 +52,11 @@ export default function Home() {
 
             {/* Other components */}
             <About />
-            <Statistic />
             <ExploreTour />
-            <StatisticsSection />
+            <Statistic />
             <FAQ />
             <CustomInfo />
-            <ContactSection />
+            <ContactForm />
         </>
     );
 }

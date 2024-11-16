@@ -12,18 +12,21 @@ import Navbar from "./components/navbar/Navbar";
 import HeroSection from './components/heroSection/HeroSection.jsx';
 import BlogDetails from './components/blog-details/BlogDetails.jsx';
 import BlogCard from './components/blog-card/BlogCard.jsx';
-import ContactPage from './components/sections/contactPage.jsx';
 import BackToTop from './components/back-to-top/BackToTop.jsx';
 // import TestNavbar from './components/testNavbar/TestNavbar.jsx';
 
 // Import error handling components
 import ErrorBoundary from './error/ErrorBoundary'; // Import ErrorBoundary
 import Transport from './components/Transportt/Transport.jsx';
+import CallButton from './components/call-button/CallButton.jsx';
+import ContactForm from './components/contact-form/ContactForm.jsx';
 
 function App() {
   return (
     <>
+    
       <Navbar />
+      <CallButton />
       <BackToTop />
 
       {/* Wrap Routes with ErrorBoundary to catch errors globally */}
@@ -33,7 +36,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/uslugi" element={<ExploreTour />} />
-          <Route path="/contacts" element={<ContactPage />} />
+          <Route path="/contacts" element={<ContactForm />} />
           <Route path="/blog" element={<BlogCard />} />
           <Route path="/transport" element={<Transport />} />
           <Route path="/details/:id" element={<BlogDetails />} />

@@ -8,19 +8,16 @@ export default function Copyright() {
                     <div className="col-md-6 text-center text-md-end mb-md-0">
                         <i className="fas fa-copyright me-2" />
                         <a className="text-white" href="#">
-                            Your Site Name
+                            MN Logistic
                         </a>
                         , All rights reserved.
                     </div>
                     <div className="col-md-6 text-center text-md-start">
                         Designed By{' '}
                         <a className="text-white" href="https://htmlcodex.com">
-                            HTML Codex
+                            Copyright 2024 all rights reserved
                         </a>
-                        {' '}Distributed By{' '}
-                        <a href="https://themewagon.com">
-                            ThemeWagon
-                        </a>
+                        
                     </div>
                 </div>
             </div>
