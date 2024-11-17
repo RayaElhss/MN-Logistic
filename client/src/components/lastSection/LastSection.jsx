@@ -4,7 +4,7 @@ const CustomsPoint = () => {
     return (
         <section className="customs-point">
             <div className="customs-content">
-                <h1 className="title">Доверете се на Къстъмс Пойнт!</h1>
+                <h1 className="title">Доверете се на МН Лоджистик!</h1>
                 <p className="subtitle">Спестете си главоболията около митническите процедури!</p>
                 <p className="description">
                     С наша помощ, митниците ще са трамплин, а не спънка за вашия бизнес.

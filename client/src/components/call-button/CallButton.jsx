@@ -1,17 +1,13 @@
-// CallButton.js
 import React from 'react';
-import styles from './CallButton.module.css'; 
+import styles from './CallButton.module.css';
 
 const CallButton = () => {
-  const handleClick = () => {
-    alert('+359 897089094');
-  };
-
   return (
-    <button className={styles.callButton} onClick={handleClick}>
+    <a href="tel:+359897089094" className={styles.callButton}>
       Call Us
-    </button>
+    </a>
   );
 };
 
 export default CallButton;
+

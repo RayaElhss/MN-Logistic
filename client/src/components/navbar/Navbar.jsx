@@ -77,7 +77,7 @@ export default function Navbar() {
                 <Link to="/" className="navbar-brand p-0" onClick={scrollToTop}>
                     <div className="logo-text-container">
                         <img
-                            src="img/testLogo6.png"
+                            src="img/mama.png"
                             alt="Logo"
                         />
                     </div>
