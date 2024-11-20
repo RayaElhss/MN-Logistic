@@ -1,11 +1,10 @@
-// tailwind.config.js
 module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}", // Ensure it includes all your React component files
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}", // Includes all Vite files
   ],
   theme: {
-    extend: {},
+      extend: {}, // Add customizations if needed
   },
-  plugins: [],
+  plugins: [], // Add plugins if necessary (e.g., forms or typography)
 };

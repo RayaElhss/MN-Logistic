@@ -5,7 +5,7 @@ import KathyAccordion from './testt/KathyAccordion';
 
 function FAQ() {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration
+    AOS.init({ duration: 1000, once: false }); // Initialize AOS with a duration, "once" ensures animation happens only once
   }, []);
 
   return (
@@ -26,38 +26,10 @@ function FAQ() {
         </div>
       </div>
 
-      
-      <KathyAccordion />
-
-      {/* <div
-        className="container"
-        style={{
-          marginTop: '20px',
-          marginBottom: '50px', // Add bottom margin to create space after accordion
-          backgroundColor: '#04305b',
-          padding: '20px',
-          borderRadius: '0 0 5px 5px'
-        }}
-        data-aos="fade-up" // Add AOS animation to the accordion container
-      >
-        <Accordion defaultActiveKey="0" flush>
-          {faqData.map((item) => (
-            <Accordion.Item eventKey={item.id.toString()} key={item.id} data-aos="fade-up">
-              <Accordion.Header className="faq-question" style={{ fontSize: '18px' }}>
-                {item.question}
-              </Accordion.Header>
-              <Accordion.Body style={{ fontSize: '16px' }}>
-                {item.answers.map((answer, index) => (
-                  <div key={index}>
-                    {answer}
-                    {index < item.answers.length - 1 && <br />}
-                  </div>
-                ))}
-              </Accordion.Body>
-            </Accordion.Item>
-          ))}
-        </Accordion>
-      </div> */}
+      {/* Add AOS animation to the accordion wrapper */}
+      <div data-aos="fade-up">
+        <KathyAccordion />
+      </div>
     </>
   );
 }

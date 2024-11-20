@@ -1,36 +1,24 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.css';
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [successMessage, setSuccessMessage] = useState('');
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+    const form = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        // Send form data to EmailJS
         emailjs
-            .send(
-                'service_h2oe1zq', // Replace with your EmailJS Service ID
-                'template_xxx', // Replace with your EmailJS Template ID
-                {
-                    name: formData.name,
-                    email: formData.email,
-                    message: formData.message,
-                },
-                'user_xxx' // Replace with your EmailJS User ID
-            )
+            .sendForm('service_h2oe1zq', 'template_112fahw', form.current, 'ovM5E9QlfQ0mfrWDf')
             .then(
                 (result) => {
                     setSuccessMessage('Благодарим ви, че се свързахте с нас!');
-                    setFormData({ name: '', email: '', message: '' }); // Reset the form
+                    form.current.reset(); // Reset the form
                 },
                 (error) => {
-                    console.error('Email send failed:', error);
+                    console.error('Email send failed:', error.text);
                 }
             );
     };
@@ -81,17 +69,15 @@ const ContactForm = () => {
 
                         <div className="col-lg-6 d-flex align-items-center">
                             <div className={styles.contactForm}>
-                                <form onSubmit={handleSubmit}>
+                                <form ref={form} onSubmit={handleSubmit}>
                                     <div className="row">
                                         <div className="col-md-12">
                                             <div className={styles.formGroup}>
                                                 <input
                                                     type="text"
-                                                    name="name"
+                                                    name="user_name"
                                                     className={styles.formControl}
                                                     placeholder="Вашето име *"
-                                                    value={formData.name}
-                                                    onChange={handleChange}
                                                     required
                                                 />
                                             </div>
@@ -100,11 +86,9 @@ const ContactForm = () => {
                                             <div className={styles.formGroup}>
                                                 <input
                                                     type="email"
-                                                    name="email"
+                                                    name="user_email"
                                                     className={styles.formControl}
                                                     placeholder="Вашия имейл *"
-                                                    value={formData.email}
-                                                    onChange={handleChange}
                                                     required
                                                 />
                                             </div>
@@ -116,8 +100,6 @@ const ContactForm = () => {
                                                     name="message"
                                                     className={styles.formControl}
                                                     placeholder="Питайте ни! *"
-                                                    value={formData.message}
-                                                    onChange={handleChange}
                                                     required
                                                 ></textarea>
                                             </div>

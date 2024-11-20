@@ -1,74 +1,119 @@
-/* src/components/about/About.module.css */
-
-.aboutSection {
-    background-color: #f0f0f0;
-    padding-top: 80px;
-    /* Add padding to top */
-    padding-bottom: 80px;
-    /* Add padding to bottom */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 190px 20px;
+    background: white;
 }
 
-.imageWrapper {
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Image Styling */
+.pic {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
 }
 
-.aboutImage {
-    width: 600%;
-    height: 550px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+/* Container for Image and Text */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1130px;
+    width: 100%;
+    gap: 30px;
+    /* Add gap between image and text */
 }
 
-.aboutImage:hover {
-    transform: scale(1.05);
+/* Text Content Styling */
+.text {
+    flex: 1;
+    margin-left: 20px;
 }
 
-.textContainer {
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 1;
-}
-
-.textWrapper {
-    background: rgba(255, 255, 255, 0.95);
-    /* Reduced transparency for better readability */
-    padding: 30px;
-    border-radius: 8px;
-}
-
-.sectionTitle {
-    font-size: 32px;
-    font-weight: bold;
-    color: #343a40;
+.text h2 {
+    color: #333;
+    font-size: 2.8rem;
+    /* Increased font size */
+    font-weight: 600;
     margin-bottom: 20px;
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    /* Adds space between heading and text */
 }
 
-.sectionTitle::after {
-    content: "";
-    width: 60px;
-    height: 4px;
-    background-color: var(--bs-primary);
-    position: absolute;
-    left: 0;
-    bottom: -10px;
+.text p {
+    color: #333;
+    font-size: 1.2rem;
+    /* Increased font size */
+    line-height: 1.7;
+    /* Improve readability */
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    /* Extra spacing for better readability */
+    font-weight: 300;
 }
 
-.text-primary {
-    color: #0d6efd !important;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        max-width: 500px;
+        /* Reduce gap on smaller screens */
+    }
+
+    .text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .text h2 {
+        font-size: 2.2rem;
+        /* Slightly increase size for better visibility */
+        margin-bottom: 15px;
+        /* Adjust spacing */
+    }
+
+    .text p {
+        font-size: 1rem;
+        /* Adjusted for mobile readability */
+        font-weight: 300;
+    }
+
+    .pic {
+        max-width: 40%;
+    }
+
+    /* Adjust image order for mobile */
+    .about > img {
+        order: -1;
+    }
 }
 
-.row p {
-    color: #495057;
-    font-size: 16px;
-}
+/* Extra small screens */
+@media (max-width: 480px) {
+    .text h2 {
+        font-size: 1.8rem;
+        /* Decrease for very small screens */
+        margin-bottom: 10px;
+    }
 
-.row p i {
-    color: #0d6efd;
+    .text p {
+        font-size: 0.9rem;
+    }
+
+    .pic {
+        max-width: 60%;
+    }
+
+    .about-us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 60px 50px;
+        background: white;
+    }
 }

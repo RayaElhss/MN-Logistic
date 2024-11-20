@@ -4,12 +4,11 @@ import 'aos/dist/aos.css';
 import About from "../about/About";
 import ExploreTour from "../uslugi/Uslugi";
 import FAQ from "../faqs/FAQs";
-import StatisticsSection from "../statisticsSection/Statistics";
-import ContactSection from '../sections/contactSection';
 import CustomInfo from '../custom-info/CutsomInfo.jsx';
-import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink from react-scroll
 import Statistic from '../testStatistics/TestStatitics.jsx';
 import ContactForm from '../contact-form/ContactForm.jsx';
+import { Link as ScrollLink } from 'react-scroll';
+import styles from './Home.module.css'; // Import the CSS module
 
 export default function Home() {
     useEffect(() => {
@@ -23,34 +22,33 @@ export default function Home() {
     return (
         <>
             <div
-                className="hero-header"
+                className={styles.heroHeader}
                 data-aos="fade-in"
                 style={{
                     backgroundImage: "url('https://i.pinimg.com/originals/2a/a7/8a/2aa78a2c8fbe91b37bfed0fbb32fae82.jpg')",
                 }}
             >
-                <div className="text-white p-3">
+                <div className={`${styles.textWhite} p-3`}>
                     <div className="parent-container">
-                        <h4 className="comfortaa-example text-uppercase mb-4">
+                        <h4 className={`${styles.comfortaaExample} text-uppercase mb-4`}>
                             Вашият доверен представител<br />пред митническите власти
                         </h4>
                     </div>
                     <div className="d-flex justify-content-center">
                         <ScrollLink
-                            to="uslugi" // The id of the section you want to scroll to
+                            to="uslugi"
                             smooth={true}
-                            offset={-70} // Adjust scroll position to avoid any header overlap
-                            duration={300} // Duration of the scroll
-                            className="cool-button btn btn-lg me-2 d-flex align-items-center"
+                            offset={-70}
+                            duration={300}
+                            className={`${styles.coolButton} btn btn-lg me-2 d-flex align-items-center`}
                         >
-                            <span className="arrow-icon">&rarr;</span> {/* Right arrow with heavier font weight */}
+                            <span className={styles.arrowIcon}>&rarr;</span>
                             НАШИТЕ УСЛУГИ
                         </ScrollLink>
                     </div>
                 </div>
             </div>
 
-            {/* Other components */}
             <About />
             <ExploreTour />
             <Statistic />

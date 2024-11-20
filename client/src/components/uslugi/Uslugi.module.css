@@ -1,0 +1,86 @@
+/* ExploreTour.module.css */
+
+.ExploreTour {
+    background-color: #f3f3f3;
+  }
+  
+  .text-center {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .text h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center; /* Center text on all screen sizes */
+  }
+  .cards-section {
+    margin-top: 30px; /* Adds space between "УСЛУГИ" and the first card */
+}
+
+  
+  .text-container {
+    background: linear-gradient(90deg, rgb(128, 0, 32) 0%, rgb(0 38 105) 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .text-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.8;
+  }
+  
+  /* Adjust for tablets (medium screens) */
+  @media (max-width: 768px) {
+    .text h2 {
+      font-size: 2rem;
+    }
+  
+    .text-container {
+      padding: 20px;
+    }
+  
+    .text-container h3 {
+      font-size: 1.3rem;
+    }
+  
+    .text-container p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Adjust for mobile devices (small screens) */
+  @media (max-width: 576px) {
+    .text h2 {
+      font-size: 1.8rem;
+    }
+  
+    .text-container {
+      padding: 15px;
+    }
+  
+    .text-container h3 {
+      font-size: 1.2rem;
+    }
+  
+    .text-container p {
+      font-size: 0.9rem;
+    }
+  }
+  

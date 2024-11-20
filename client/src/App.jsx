@@ -24,10 +24,11 @@ import ContactForm from './components/contact-form/ContactForm.jsx';
 function App() {
   return (
     <>
-    
+
       <Navbar />
       <CallButton />
       <BackToTop />
+
 
       {/* Wrap Routes with ErrorBoundary to catch errors globally */}
       <ErrorBoundary>

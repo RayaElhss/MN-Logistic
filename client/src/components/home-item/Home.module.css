@@ -1,0 +1,134 @@
+.heroHeader {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.textWhite {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.textWhite h4 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.comfortaaExample {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.coolButton {
+    background-color: transparent;
+    color: white;
+    padding: 14px 30px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(253, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.coolButton:hover {
+    background-color: #d38143;
+    color: white;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.arrowIcon {
+    font-size: 1.8em;
+    margin-right: 12px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.coolButton:hover .arrowIcon {
+    transform: translateX(5px);
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .heroHeader {
+        padding: 10px;
+        height: 90vh;
+    }
+
+    .textWhite {
+        padding: 20px;
+        text-align: left;
+        /* Align text to the left for better readability */
+    }
+
+    .comfortaaExample {
+        text-align: left;
+        /* Move text slightly to the left */
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .coolButton {
+        font-size: 1.8em;
+        /* Slightly smaller button size */
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .heroHeader {
+        padding: 5px;
+        height: 80vh;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .textWhite {
+        padding: 10px;
+        font-size: 0.9em;
+        max-width: 95%;
+        text-align: left;
+        /* Keep text aligned left for smaller screens */
+    }
+
+    .comfortaaExample {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        line-height: 1.2;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        /* Move slightly to the left */
+    }
+
+    .coolButton {
+        padding: 10px 20px;
+        /* Adjust padding for smaller buttons */
+        font-size: 1.6em;
+    }
+
+    .arrowIcon {
+        font-size: 1.5em;
+        /* Slightly smaller icon */
+        margin-right: 8px;
+    }
+
+}
+
+@media (max-width:752px) {
+    
+}
