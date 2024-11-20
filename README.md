@@ -1,6 +1,6 @@
 # ReactJS-Project
 steps to start:
-- Навигирай към папката client
+- navigate to the client folder
 - run:
   - npm i
   - npm run dev.
